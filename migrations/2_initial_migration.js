@@ -1,5 +1,9 @@
 const StockNft = artifacts.require('StockNft');
 
 module.exports = (deployer) => {
-  deployer.deploy(StockNft);
+
+  const name = "StockNft";
+  const symbol = "STC";
+
+  deployer.deploy(StockNft, name, symbol);
 };
