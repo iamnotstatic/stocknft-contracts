@@ -1,0 +1,10 @@
+{
+  "name": "nft",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Abdulfatai Suleiman",
+  "license": "MIT",
+  "dependencies": {
+    "@openzeppelin/contracts": "^4.0.0"
+  }
+}
