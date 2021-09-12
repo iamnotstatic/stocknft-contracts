@@ -24,8 +24,8 @@ contract('Stock NFT', async (accounts) => {
 
   describe('mint test', async () => {
     it('should mint', async () => {
-      const mint = this.contract.mint(accounts[0], { from: accounts[0] });
-      await expectEvent(mint, "Transfer");
+      const mint = this.contract.createNft(accounts[0], { from: accounts[0] });
+      await expectEvent(mint, "CreatNftEvent");
     });
   });
 });
